@@ -42,7 +42,7 @@ var isString = function isString(val) {
   return val && typeof val === 'string' && val.length > 0;
 };
 var isPObject = function isPObject(val) {
-  return val && (typeof val === 'undefined' ? 'undefined' : _typeof(val)) === 'object' && val !== null && val.constructor === Object && Object.keys(val).length > 0;
+  return val && (typeof val === 'undefined' ? 'undefined' : _typeof(val)) === 'object' && val !== null && Object.keys(val).length > 0;
 };
 
 var hyphenate = function hyphenate(str) {
